@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="brody17.css">
+		<script src = "brody17.js"></script>
+		<title>The US ATC System</title>
+	</head>
+	<body>
+		<ul id="sddm">
+			<li><a href="brody17.html"
+				onmouseover="mopen('m1')" 
+				onmouseout="mclosetime()">Basic ATC</a>
+				<div id="m1" 
+					onmouseover="mcancelclosetime()" 
+					onmouseout="mclosetime()">
+				<a href="brody17.html#mission">The Air Traffic Control Mission</a>
+				<a href="brody17.html#opduty">Operational and Duty Priorities</a>
+				<a href="brody17.html#positions">ATC Positions and Functions</a>
+				<a href="brody17.html#airspace">The National Airspace System</a>
+				</div>
+			</li>
+			<li><a href="" 
+				onmouseover="mopen('m2')" 
+				onmouseout="mclosetime()">ATC Rating Training</a>
+				<div id="m2" 
+					onmouseover="mcancelclosetime()" 
+					onmouseout="mclosetime()">
+				<a href="s1.html">S1 - DEL/GND</a>
+				<a href="s2.html">S2 - TWR</a>
+				<a href="s3.html">S3 - TRACON (APP/DEP)</a>
+				<a href="c1.html">C1 - CTR (Enroute)</a>
+				</div>
+			</li>
+			<li><a href="" 
+				onmouseover="mopen('m3')" 
+				onmouseout="mclosetime()">The Real World</a>
+				<div id="m3" 
+					onmouseover="mcancelclosetime()" 
+					onmouseout="mclosetime()">
+				<a href="https://www.faa.gov/" target="_blank">FAA Website</a>
+				<a href="https://www.faa.gov/about/office_org/headquarters_offices/arc/programs/academy/" target="_blank">The FAA Academy</a>
+				<a href="https://www.faa.gov/jobs/career_fields/aviation_careers/" target="_blank">Air Traffic Control Careers</a>
+				<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwi7qpbl1PTRAhUm_4MKHTfTDUgQFggjMAE&url=http%3A%2F%2Fwww.liveatc.net%2F&usg=AFQjCNHkeOWb2kEPDcUU9_R3926tOt7yBA" target="_blank">Live ATC</a>
+				</div>
+			</li>
+			<li><a href="" 
+				onmouseover="mopen('m4')" 
+				onmouseout="mclosetime()">VATSIM</a>
+				<div id="m4" 
+					onmouseover="mcancelclosetime()" 
+					onmouseout="mclosetime()">
+				<a href="https://www.vatsim.net/" target="_blank">VATSIM</a>
+				<a href="https://vatna.org/" target="_blank">VATNA</a>
+				<a href="https://www.vatusa.net/" target="_blank">VATUSA</a>
+				<a href="http://vzanartcc.net/" target="_blank">The Anchorage ARTCC</a>
+				</div>
+			</li>
+		</ul>
+		<div style="clear:both"></div>
+		
+		<div id="content">
+			<h1>Rating Training:</h1>
+			<h3>S1 Training (Clearance Delivery/Ground)</h3>
+			<h4>Introduction to Clearance Delivery/Flight Plans:</h4>
+			<p>Clearance Delivery (callsign suffix _DEL, for "clearance") is normally the first controller that a pilot will talk to when starting a flight. Although to new controllers just starting out the clearance delivery position may seem tedious and unimportant, it actually serves a crucial purpose in keeping traffic moving efficiently. The initial clearance process allows the pilot and the controllers to be sure they are on the same page with respect to the pilot's routing, initial altitude and cruise altitude. It also allows the controllers to correct any errors in the pilot's filing and to modify the pilot's requested routing and altitude as needed to optimize the flow of all traffic. In VATSIM the clearance delivery function is often fulfilled by higher control positions such as GND, TWR, DEP, APP or CTR if there is no one actually staffing the DEL position. Learning how to manage clearances correctly, quickly and efficiently is an essential and basic skill for all controllers.</p>
+			<h4>What Is a Clearance?</h4>
+			<p>The Federal Aviation Administration Pilot/Controller Glossary defines a "Clearance (ATC Clearance)" as follows:</p>
+			<p class="quote"><span>"</span>AIR TRAFFIC CLEARANCE- An authorization by air traffic control for the purpose of preventing collision between known aircraft, for an aircraft to proceed under specified traffic conditions within controlled airspace. The pilot-in-command of an aircraft may not deviate from the provisions of a visual flight rules (VFR) or instrument flight rules (IFR) air traffic clearance except in an emergency or unless an amended clearance has been obtained. Additionally, the pilot may request a different clearance from that which has been issued by air traffic control (ATC) if information available to the pilot makes another course of action more practicable or if aircraft equipment limitations or company procedures forbid compliance with the clearance issued. Pilots may also request clarification or amendment, as appropriate, any time a clearance is not fully understood, or considered unacceptable because of safety of flight. Controllers should, in such instances and to the extent of operational practicality and safety, honor the pilot's request. 14 CFR Part 91.3(a) states: "The pilot in command of an aircraft is directly responsible for, and is the final authority as to, the operation of that aircraft." THE PILOT IS RESPONSIBLE TO REQUEST AN AMENDED CLEARANCE if ATC issues a clearance that would cause a pilot to deviate from a rule or regulation, or in the pilot's opinion, would place the aircraft in jeopardy."</p>
+			<h4>Charts:</h4>
+			<p>One of the first steps in becoming effective at the _DEL position is to gain a basic understanding of the airspace and departure procedures for the airport that you are covering. At the time of this writing VFR, low altitude IFR & high altitude IFR charts are available at <a href="www.skyvector.com" target="_blank">SkyVector.com</a>. Complete US terminal procedure charts including instrument departure charts are available at <a href="www.airnav.com" target="_blank">AirNav</a>, and other sites. Commonly used VATSIM routes can be found at <a href="www.simroutes.com" target="_blank">SimRoutes.com</a>. A small amount of time spent familiarizing yourself with the departure procedures and common flight routes related to the airport that you will be covering will be time very well spent when you start actually talking to live traffic. For many student controllers the easiest and most enjoyable way to learn the airspace that they will be controlling is to simply spend some time flying, in the VATSIM virtual sky, the procedures and common flight routes you will be controlling.</p>
+			<h4>IFR Clearances</h4>
+			<p>If you read the above, you may be thinking, "There is a lot to remember". While it may seem like a lot of information, there is an acronym which will help you remember the different aspects of the clearance and the order they are presented in. It is known as the "CRAFT" acronym. CRAFT is an abbreviation for Clearance, Route, Altitude, Frequency, Transponder.</p>
+			<p>A non-SID departure clearance, using CRAFT: </p>
+			<p><strong>C</strong> - "Skyhawk 5204N, Cleared to Muncie Airport, <strong>R</strong> - via radar vectors Knox, then as filed, <strong>A</strong> - Maintain three thousand. Expect seven thousand, one zero minutes after departure", <strong>F</strong> - Departure Frequency one two four point eight, <strong>T</strong> - Squawk three one two one."</p>
+		</div>
+	</body>
+</html>

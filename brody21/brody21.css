@@ -1,0 +1,39 @@
+img{
+	width:250px;
+	height:350px;
+	margin:0;
+	padding:0;
+	border:1px solid red;
+	position:absolute;
+}
+
+#line1 img{
+	top:0px;
+}
+
+#line2 img{
+	top:350px;
+}
+#line3 img{
+	top:700px;
+}
+#content{
+	position:absolute;
+	left:320px;
+	right:320px;
+	margin:0;
+}
+
+body{
+	background:lightblue;
+	height:1051px;
+	width:1890px;
+}
+
+h1{
+	z-index:6;
+	top:450px;
+	left:580px;
+	position:absolute;
+	color:red;
+}
