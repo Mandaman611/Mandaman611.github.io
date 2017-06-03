@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+    <HEAD>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <SCRIPT LANGUAGE="JavaScript">
+            <!-- This script and many more are available free online at -->
+            <!-- The JavaScript Source!! http://www.javascriptsource.com -->
+            <!-- Original:  Hoop Hooper (OwnerChris@cmuds.com) -->
+            <!-- Web Site:  http://www.cmuds.com -->
+
+            <!-- Begin
+            <!--START OF TIMER SCRIPT-->
+            //how much time they get
+            var time = 30;
+            var timesup = 0;
+            var started = 0;
+
+            function CountDown() {
+                if (time > 0) {
+                    document.math.timer.value = time;
+                    time = time - 1;
+                    var gameTimer = setTimeout("CountDown()", 1000)
+                } else if (time <= 0) {
+                    document.math.timer.value = "0";
+                    timesup = 1;
+                    alert('Time\'s Up!');
+					if(document.math.points.value<0){
+						alert("Your final score was "+document.math.points.value+".  Looks like you missed more than you got.  Try again!");
+					}else if(document.math.points.value>=0 && document.math.points.value<5){
+						alert("Your final score was "+document.math.points.value+".  Good try.  Better luck next time!");
+					}else if(document.math.points.value>=5 && document.math.points.value<10){
+						alert("Your final score was "+document.math.points.value+".  Nice work!");
+					}else if(document.math.points.value>=10 && document.math.points.value<20){
+						alert("Your final score was "+document.math.points.value+".  Great job!");
+					}else{
+						alert("Your final score was "+document.math.points.value+".  Consider a job as a teacher!");
+					}
+                    document.math.firstnum.value = "";
+                    document.math.operator.value = "";
+                    document.math.secondnum.value = "";
+                    document.math.answer.value = "";
+                }
+            }
+            <!--END OF TIMER SCRIPT-->
+
+            function startgame() {
+                if (started != 0) {
+                    alert('You\'ve Already Started!');
+                } else {
+                    started = 1;
+                    CountDown();
+                    getProb();
+                }
+            }
+
+            <!--START OF RANDOM NUMBER SCRIPT-->
+            function randnum(min, max) {
+                var num = Math.round(Math.random() * (max - min)) + min;
+                return num;
+            }
+            <!--END OF RANDOM NUMBER SCRIPT-->
+
+            var choose, rightanswer
+
+            function getProb() {
+                choose = randnum(1, 8);
+                if (choose == "1") {
+                    document.math.operator.value = "+";
+                    var choose1 = randnum(0, 50);
+                    var choose2 = randnum(0, 50);
+                    document.math.firstnum.value = choose1;
+                    document.math.secondnum.value = choose2;
+                    rightanswer = choose1 + choose2;
+                } else if (choose == "2") {
+                    document.math.operator.value = "-";
+                    var choose2 = randnum(0, 50);
+                    var choose1 = randnum(choose2, 50);
+                    document.math.firstnum.value = choose1;
+                    document.math.secondnum.value = choose2;
+                    rightanswer = choose1 - choose2;
+                } else if (choose == "3") {
+                    document.math.operator.value = "x";
+                    var choose1 = randnum(0, 10);
+                    var choose2 = randnum(0, 10);
+                    document.math.firstnum.value = choose1;
+                    document.math.secondnum.value = choose2;
+                    rightanswer = choose1 * choose2;
+                } else if (choose == "4") {
+                    document.math.operator.value = "/";
+                    var choose2 = randnum(1, 10);
+                    var choose1 = choose2 * randnum(0, 10);
+                    document.math.firstnum.value = choose1;
+                    document.math.secondnum.value = choose2;
+                    rightanswer = choose1 / choose2;
+                } else if (choose == "5") {
+                    document.math.operator.value = "%";
+                    var choose2 = randnum(1, 10);
+                    var choose1 = choose2 * randnum(0, 10);
+                    document.math.firstnum.value = choose1;
+                    document.math.secondnum.value = choose2;
+                    rightanswer = choose1 % choose2;
+                } else if (choose == "6") {
+                    document.math.operator.value = "^";
+                    var base = randnum(1, 5);
+                    document.math.firstnum.value = base;
+                    document.math.secondnum.value = "2";
+                    rightanswer = Math.pow(base, 2);
+                } else if (choose == "7") {
+                    document.math.operator.value = "^";
+                    var base = randnum(1, 5);
+                    var exponent = randnum(1, 5);
+                    document.math.firstnum.value = base;
+                    document.math.secondnum.value = exponent;
+                    rightanswer = Math.pow(base, exponent);
+                } else if (choose == "8") {
+                    document.math.operator.value = "!";
+                    var choose = randnum(1, 10);
+                    document.math.firstnum.value = choose;
+                    document.math.secondnum.value = " ";
+                    rightanswer = 1;
+                    for (var i = 1; i <= choose; i++) {
+                        rightanswer = rightanswer * i;
+                    }
+                } else {
+                    alert("Naughty hackers beware!  You can't touch this!");
+                }
+            }
+
+            function answerit() {
+                if (started == 0) {
+                    alert('You Must Click The Button Labeled \'Start\'!');
+                } else {
+                    if (timesup != 0) {
+                        alert('Time Ran Out!');
+                    } else {
+                        var theiranswer = eval(document.math.answer.value);
+                        var theirpoints = eval(document.math.points.value);
+                        if (theiranswer == null) {
+                            alert('Put Your Answer In The Box To The Left Of The Button Labeled \'Submit Answer\'!');
+                            document.math.answer.select();
+                        } else {
+                            if (theiranswer == rightanswer) {
+                                alert('Right');
+                                theirpoints = theirpoints + 2;
+                                document.math.points.value = theirpoints;
+                            } else {
+                                alert(theiranswer + " is Wrong!\n\n" + rightanswer + " is the correct answer!");
+                                theirpoints = theirpoints - 1;
+                                time = time - 5;
+                                document.math.points.value = theirpoints;
+                            }
+                            document.math.answer.select();
+                            getProb();
+                        }
+                    }
+                }
+            }
+
+            $("#ans").keyup(function(event) {
+                if (event.keyCode == 13) {
+                    answerit();
+                }
+            });
+            //  End -->
+
+        </script>
+
+    </HEAD>
+
+    <BODY style="background:#EAFFFF;">
+		<center>
+			<h1 style = "color:red">Simple Math Game</h1>
+			<p>The Current Possible Question Types Are:</p>
+			<div style = "width:100%; margin-left:40%;">
+				<ul style="list-style-position:inside; text-align:left;">
+					<li>Addition (+)</li>
+					<li>Subtraction (-)</li>
+					<li>Multiplication (x)</li>
+					<li>Division (/)</li>
+					<li>Remainders (%)</li>
+					<li>Squares (^2)</li>
+					<li>Exponents (^x)</li>
+					<li>Factorials (!)</li>
+				</ul>
+			</div>
+		</center>
+        <table align="center" style="background:#FFD1F3; padding:50px; border:2px solid red; width:30%; height:30%; margin-left:-15%; margin-right:-15%; top:30%; left:50%; position:fixed;">
+            <tr>
+                <td colspan="3" align="center"><input type="button" value="New Game" onClick="location.reload();"></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center"><input type="button" value="Start" size="5" onClick="startgame()"></td>
+            </tr>
+            <tr>
+                <form name="math">
+                    <td colspan="3" align="center">
+                        <font face="Arial, Helvetica, Sans Serif" size="3" color="#0000FF"><b>Time Remaining:</b> </font><input type="text" name="timer" size="5" readonly></td>
+						
+            </tr>
+            <tr>
+                <td align="right">
+				
+                    <font face="Arial, Helvetica, Sans Serif" size="3" color="#0000FF"><b>Solve:</b> </font><input type="text" name="firstnum" size="5" readonly></td>
+                <td align="center"><input type="text" name="operator" size="2" readonly></td>
+                <td align="left"><input type="text" name="secondnum" size="5" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">
+                    <hr>
+                    <font face="Arial, Helvetica, Sans Serif" size="3" color="#0000FF"><b>Put Answer Here:</b></font> <input id="ans" type="text" name="answer" size="5"> <input id="checkit" type="button" value="Submit Answer" onClick="answerit();">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">
+                    <font face="Arial, Helvetica, Sans Serif" size="3" color="#0000FF"><b>Points:</font></b><input type="text" name="points" size="2" value="0" readonly></td>
+            </tr>
+            <tr>
+                </form>
+            </tr>
+        </table>
+    </body>
+
+</html>

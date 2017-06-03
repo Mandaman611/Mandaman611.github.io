@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Brin Brody</title>
+        <link rel="stylesheet" type="text/css" href="brody23.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                // Add smooth scrolling to all links
+                $("a").on('click', function(event) {
+
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function() {
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
+        </script>
+
+
+        <script>
+            function makeJoke() {
+                used = [];
+                while (true) {
+                    var joke = Math.round(Math.random()) * 3 + 0
+                    if (joke in used) {
+                        joke = Math.round(Math.random()) * 3 + 0;
+                    } else {
+                        used.push(joke);
+                        break;
+                    }
+                    console.log(used);
+
+                }
+                if (joke == 0) {
+                    alert("What did Johann say when he got back from his concert?");
+                    alert("I'm Bach!");
+                    window.open("https://en.wikipedia.org/wiki/Johann_Sebastian_Bach");
+                } else if (joke == 1) {
+                    alert("What did Johannes' wife say when he got back from his concert?");
+                    alert("Honey, are you bach?");
+                    alert("No!  I'm Brahms!");
+                    window.open("https://en.wikipedia.org/wiki/Johannes_Brahms");
+                } else if (joke == 2) {
+                    alert("What did Franz's wife ask him, before he left for the grocery store?");
+                    alert("Do you have the Liszt?");
+                    window.open("https://en.wikipedia.org/wiki/Franz_Liszt");
+                } else if (joke == 3) {
+                    alert("Why did Frederic's wife let him do all the cooking?");
+                    alert("Because he was good at Chopin!")
+                    window.open("https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin");
+                }
+            }
+        </script>
+    </head>
+
+    <body id="top">
+		
+        <div id="content">
+			<div id="navbar">
+				<ul>
+					<li><a href="#image">About Me</a></li>
+					<li><a href="#musicians">Musicians</a></li>
+					<li><a href="#actors">Actors</a></li>
+					<li><a href="#books">Books</a></li>
+					<li><a href="#food">Food</a></li>
+				</ul>
+			</div>
+            <div id="header">
+                <img src="https://www.m0a.com/wordpress/wp-content/uploads/2009/01/cessna-172-flying-m0a.jpg" />
+                <h1>Brin Brody</h1>
+                <h3>Pilot, Controller and Programmer</h3>
+            </div>
+            <div id="main">
+                <table id="opening">
+                    <tr>
+                        <td id="image">
+                            <img src="brin_brody.jpg" />
+                        </td>
+                        <td id="borderleft">
+                            <p>Once up and out of bed (not easy in allergy season) I am in constant motion. I like things that move: Airplanes, horses, boats. And I love making them move. I work one afternoon a week at Bergen Equestrian Center to help pay for riding lessons. I like the communication part of horsemanship. I guess I'm a control freak. I'm deeply involved in the online air-traffic control universe of VATSIM. It's an immersive multi-participant simulation of actual airspace where pilots and controllers interact in real time, according to true rules. I'm taking an online pilot training course as well. I write code (Java, Python, HTML, others...) and enjoy its ability to make stuff happen. Programming is power. Piloting is power. They are closely related.</p>
+                            <p>I was a competitive gymnast until it got too dangerous and took up too much time (4 nights a week plus meets on weekends). I have studied Isshin-ryu karate for more than 8 years and am a 3rd degree brown belt. Again, all about power and control. I have a twin. She, too, is a samurai - and a former gymnast. We both do volunteer work for kids with special needs through District 6 Challenger Baseball League. And we both have led horses in the equine therapy program at Pony Power Therapies whose clients are mostly autistic kids and adults with PTSD. </p>
+                            <p>Looking toward the future, a lot of things will happen when I turn 16. I can get my black belt in karate and complete solo flight. Then there's the whole game that is getting into a good college. Because knowledge is power to move up.</p>
+                        </td>
+                    </tr>
+                </table>
+                <div id="fineart">
+                    <div id="musicians">
+                        <h2>Favourite Musicians</h2>
+                        <ol>
+                            <li>Ludwig van Beethoven</li>
+                            <li>Wolfgang Amadeus Mozart</li>
+                            <li>Johann Sebastian Bach</li>
+                            <li>Pyotr Ilyich Tchaikovsky</li>
+                            <li>Johannes Brahms</li>
+                        </ol>
+                    </div>
+                    <div id="hobbies">
+                        <h2>Favourite Hobbies</h2>
+                        <ul>
+                            <li>Flying</li>
+                            <li>Air Traffic Controlling</li>
+                            <li>Programming</li>
+                            <li onClick="makeJoke()" onmouseover="" style="cursor: pointer;">Making Funny Composer Puns (Click Me!)</li>
+                            <li>Riding Horses</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="actors">
+                    <h2>Favourite Actors</h2>
+                    <div id="uno">
+                        <ul>
+                            <li>Morgan Freeman</li>
+                            <ol>
+                                <li>Now You See Me</li>
+                                <li>The Lego Movie</li>
+                                <li>The Sum of All Fears</li>
+                            </ol>
+                            <br>
+                            <li>Michael Caine</li>
+                            <ol>
+                                <li>Now You See Me</li>
+                                <li>Miss Congeniality</li>
+                                <li>Interstellar</li>
+                            </ol>
+                            <br>
+                            <li>Sandra Bullock</li>
+                            <ol>
+                                <li>Miss Congeniality</li>
+                                <li>Gravity</li>
+                                <li>The Blind Side</li>
+                            </ol>
+                        </ul>
+                    </div>
+                    <div id="dos">
+                        <ul>
+                            <li>George Cloony</li>
+                            <ol>
+                                <li>Gravity</li>
+                                <li>Tomorrowland</li>
+                                <li>The Monuments Men</li>
+                            </ol>
+                            <br>
+                            <li>Matt Damon</li>
+                            <ol>
+                                <li>The Martian</li>
+                                <li>Elysium</li>
+                                <li>Interstellar</li>
+                            </ol>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div id="books">
+                    <h2>Favourite Books</h2>
+                    <dl>
+                        <dt>The Alchemyst: The Secrets of the Immortal Nicholas Flamel </dt>
+                        <dd>Nicholas Flamel, the immortal Alchymest, lives. He has been making the elixr of life for centuries, keeping himself, and his wife alive. He and his sorceress wife protect the Book of Abraham the Mage. This book is the most powerful book that ever existed. In the wrong hands, it could destroy the world.</dd>
+                        <dt>The Paladin Prophecy: Book 1</dt>
+                        <dd>Will West is careful to live life hidden. He's made sure to get only decent grades and to stay in the middle of the pack on his cross-country team. Then Will accidentally scores off the charts on a nationwide exam. This attracts a special school to him, where he will fight to save the world.</dd>
+                        <dt>Alliance: The Paladin Prophecy Book 2</dt>
+                        <dd>Will West is a student of the Centre - a school for an elite group of students. After exposing a sinister underground society of students known as the Knights of Charlemagne, Will discovers that he is developing supernatural physical and mental abilities. He attempts to learn to harness these new abilities in order to defeat the dreaded Knights.</dd>
+                        <dt>Rogue: The Paladin Prophecy Book 3</dt>
+                        <dd>Will West is playing a dangerous game. Months after uncovering the sinister Paladin Prophecy plot, Will continues to work with the mastermind behind the project - none other than his own grandfather, Franklin Greenwood. Will cooperates in order to keep his friends safe. Contending with the ultimate hostage situation, Will will fight to keep his friends alive, if only to discover that one has betrayed him.</dd>
+                        <dt>Flowers for Algernon</dt>
+                        <dd>Through his diary entries, test subject Charlie Gordon describes how a brain operation raises his IQ and changes his life. As the effects continue, Charlie's intelligence expands past that of the doctors who created this change in the first place. This breakthrough is amazing to all, until a mouse named Algernon, a non-human test subject, begins sudden deterioration. Will the same happen to Charlie?</dd>
+                    </dl>
+                </div>
+
+                <div id="food">
+                    <h2>Favourite Foods</h2>
+                    <table>
+                        <tr class="odd">
+                            <th>Food</th>
+                            <th>Image</th>
+                        </tr>
+                        <tr>
+                            <td>Pizza</td>
+                            <td class="foodimg"><img src="http://www.cicis.com/media/1243/pizza_adven_zestypepperoni.png" /></td>
+                        </tr>
+                        <tr class="odd">
+                            <td>Seasame Chicken</td>
+                            <td class="foodimg"><img src="http://www.happyyouchinese.com/images/sesame.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>Milk Chocolate</td>
+                            <td class="foodimg"><img src="https://static.wixstatic.com/media/df46da_a5c4d1d24f044ff389ea4d4e6ba9f696.png_srz_700_662_85_22_0.50_1.20_0.00_png_srz" /></td>
+                        </tr>
+                        <tr class="odd">
+                            <td>Steak</td>
+                            <td class="foodimg"><img src="http://www.ilovealabamafood.com/wp-content/uploads/2011/12/dish-detail-whiskey-steak.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>Croutons</td>
+                            <td class="foodimg"><img src="http://vignette4.wikia.nocookie.net/thehungergamesrp/images/3/31/Croutons.png/revision/latest?cb=20151211235340" /></td>
+                        </tr>
+                    </table>
+				</div>
+            </div>
+			
+			<div id="footer">
+				<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+			</div>
+        </div>
+    </body>
+</html>

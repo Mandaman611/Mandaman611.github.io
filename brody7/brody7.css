@@ -1,0 +1,28 @@
+ul{
+	fixed-width: 600px;
+	text-align:center;
+	list-style-type: none;
+}
+
+body{
+	background-color:#54CCFF;
+}
+
+p,li{
+	font-size:120%;
+	font-family:Verdana;
+}
+li::first-letter{
+	font-size: 130%;
+}
+
+
+#wrap{
+	margin: auto;
+	width:60%;
+	padding:10px;
+}
+
+.copyright{
+	font-size: 120%;
+}

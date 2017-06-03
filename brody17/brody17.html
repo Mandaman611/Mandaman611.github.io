@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="brody17.css">
+		<script src = "brody17.js"></script>
+		<title>The US ATC System</title>
+	</head>
+	<body>
+		<ul id="sddm">
+			<li><a href="brody17.html"
+				onmouseover="mopen('m1')" 
+				onmouseout="mclosetime()">Basic ATC</a>
+				<div id="m1" 
+					onmouseover="mcancelclosetime()" 
+					onmouseout="mclosetime()">
+				<a href="#mission">The Air Traffic Control Mission</a>
+				<a href="#opduty">Operational and Duty Priorities</a>
+				<a href="#positions">ATC Positions and Functions</a>
+				<a href="#airspace">The National Airspace System</a>
+				</div>
+			</li>
+			<li><a href="" 
+				onmouseover="mopen('m2')" 
+				onmouseout="mclosetime()">ATC Rating Training</a>
+				<div id="m2" 
+					onmouseover="mcancelclosetime()" 
+					onmouseout="mclosetime()">
+				<a href="s1.html">S1 - DEL/GND</a>
+				<a href="s2.html">S2 - TWR</a>
+				<a href="s3.html">S3 - TRACON (APP/DEP)</a>
+				<a href="c1.html">C1 - CTR (Enroute)</a>
+				</div>
+			</li>
+			<li><a href="" 
+				onmouseover="mopen('m3')" 
+				onmouseout="mclosetime()">The Real World</a>
+				<div id="m3" 
+					onmouseover="mcancelclosetime()" 
+					onmouseout="mclosetime()">
+				<a href="https://www.faa.gov/" target="_blank">FAA Website</a>
+				<a href="https://www.faa.gov/about/office_org/headquarters_offices/arc/programs/academy/" target="_blank">The FAA Academy</a>
+				<a href="https://www.faa.gov/jobs/career_fields/aviation_careers/" target="_blank">Air Traffic Control Careers</a>
+				<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwi7qpbl1PTRAhUm_4MKHTfTDUgQFggjMAE&url=http%3A%2F%2Fwww.liveatc.net%2F&usg=AFQjCNHkeOWb2kEPDcUU9_R3926tOt7yBA" target="_blank">Live ATC</a>
+				</div>
+			</li>
+			<li><a href="" 
+				onmouseover="mopen('m4')" 
+				onmouseout="mclosetime()">VATSIM</a>
+				<div id="m4" 
+					onmouseover="mcancelclosetime()" 
+					onmouseout="mclosetime()">
+				<a href="https://www.vatsim.net/" target="_blank">VATSIM</a>
+				<a href="https://vatna.org/" target="_blank">VATNA</a>
+				<a href="https://www.vatusa.net/" target="_blank">VATUSA</a>
+				<a href="http://vzanartcc.net/" target="_blank">The Anchorage ARTCC</a>
+				</div>
+			</li>
+		</ul>
+		<div style="clear:both"></div>
+		
+		<div id="content">
+		<h1>Basic Air Traffic Control (ATC)</h1>
+			<div id="mission">
+				<h3>The Mission of ATC: </h3>
+				<p>The mission of Air Traffic Control can be stated by several definitions that include task that a controller is expected to follow every time he/she performs their job. The most commonly used definition is:</p>
+				<p class="quote"><span>"</span>Air traffic control is a service provided to promote the safe, orderly, and expeditious flow of air traffic."</p>
+				<p>The given definition per FAA Order JO 7110.65S, Air Traffic Control goes more in depth into explaining the tasks air traffic controllers must perform:</p>
+				<p class="quote"><span>"</span>The primary purpose of the ATC system is to prevent a collision between aircraft operating in the system and to organize and expedite the flow of traffic, and to provide support for National Security and Homeland Defense. In addition to its primary function, the ATC system has the capability to provide (with certain limitations) additional services. The ability to provide additional services is limited by many factors, such as the volume of traffic, frequency congestion, quality of radar, controller workload, higher priority duties, and the pure physical inability to scan and detect those situations that fall in this category. It is recognized that these services cannot be provided in cases in which the provision of services is precluded by the above factors. Consistent with the aforementioned conditions, controllers shall provide additional service procedures to the extent permitted by higher priority duties and other circumstances. The provision of additional services is not optional on the part of the controller, but rather is required when the work situation permits."</p>
+				<p>On close examination, we find the first section is pretty straight forward:</p>
+				<p class="quote"><span>"</span>The primary purpose of the ATC system is to prevent a collision between aircraft operating in the system and to organize and expedite the flow of traffic, and to provide support for National Security and Homeland Defense."</p>
+				<p>Simply put, don't allow aircraft to crash into one another, make sure they get where they're supposed to go quickly, efficiently and safely and to support military or homeland defense operations when requested to do so.</p>
+			</div>
+			<div id="opduty">
+				<h3>Operational and Duty Priorities</h3>
+				<p>Operational and Duty Priorities are organized into three steps of importance:</p>
+				<ol>
+					<li>Give first priority to separating aircraft and issuing safety alerts as required in this order. Good judgment shall be used in prioritizing all other provisions of this order based on the requirements of the situation at hand.</li>
+					<li>Provide support to national security and homeland defense activities to include, but not be limited to, reporting of suspicious and/or unusual aircraft/pilot activities.</li>
+					<li>Provide additional services to the extent possible, contingent only upon higher priority duties and other factors including limitations of radar, volume of traffic, frequency congestion, and workload.</li>
+				</ol>
+				<p>Starting with the first level of importance, controllers must be able to separate and keep aircraft safe.  It must be a priority over all other activites, including but not limited to supporting national security and homeland defense activities, and providing additional requested, but not required services to pilots.</p>
+				<p>These priority levels are determined by limitations of radar, including vertical and lateral range, volume of traffic, frequency congestion, and the current workload of the controller and area, being an airfield, TRACON, or Enroute airspace.</p>
+			</div>
+			<div id = "positions">
+				<h3>Air Traffic Control Positions</h3>
+				<h4>ATCT - Air Traffic Control Tower</h2>
+				<p>Within the Air Traffic Control Tower of an airfield, there are three controller positions that are controlled by FAA trained controllers at all times.<p>
+				<ol>
+					<li>Clearance Delivery - DEL</li>
+					<li>Ground - GND</li>
+					<li>Tower - TWR</li>
+				</ol>
+				<p>Each of these positions has a different job within the tower, that when combined, allow aircraft to get off the ground saftely, with a valid route.</p>
+				<h5>Clearance Delivery - DEL</h5>
+				<p>The job of a clearance delivery controller, shortened to DEL, is to take IFR (Instrument Flight Rules) and VFR (Visual Flight Rules) flight plans filed with the FAA prior to the flight of an aircraft, and approve, decline, or change the plans.  These adjustments are made in order to ensure the fight path of the airport will be clear of flight restrictions, other aircraft, and weather issues.</p>
+				<p>Often the first controller a pilot will speak to, clearance delivery controllers must be well equipped to help iron out any technical issues pilots may have prior to departure.</p>
+				<h5>Ground - GND</h5>
+				<p>A ground controller, shortened to GND, at any given airfield, will be responsible for the ground movement of aircraft in all movement areas of the airport.  This includes but is not limited to pushback and taxing.</p>
+				<p>Airfields are made up of movement areas, and non-movement areas.  The movement areas are made up of runways, and taxiways.  The ground controller is responsible for the safe movement of all aircraft and other airport vehicles while they are on these taxiways.</p>
+				<p>Ground controllers, like "Kennedy Steve", at airports, make sure that aircraft safely get from the ramp, and terminal, to the runway they will take off from, or land on:</p>
+				<br>
+				<center><iframe width="600" height="355" src="https://www.youtube.com/embed/4HDTMvTNRrc" frameborder="0" allowfullscreen></iframe></center>
+				<div class="image">
+					<img src="JFKDiagram.jpg" id="turned">
+					<p class = "caption">An Airport Diagram of John F. Kennedy International Airport, Depicting The Control Area of a Ground Controller</p>
+				</div>
+				<h5>Tower - TWR</h5>
+				<p>The tower position of an airport, shortened to TWR, is responsible for choosing and maintaining runways, weather information, and the landing and departing traffic.  Tower controllers will decide if and when an aircraft is cleared for takeoff, or cleared to land, and where they go immediately after, wether it be onto a taxiway, or on a heading in the sky.</p>
+				<h4>TRACON - Terminal Radar Control</h4>
+				<p>Within the Terminal Radar Control of an area, there are two controller positions that are controlled by FAA trained controllers at all times.</p>
+				<h5>Departure Control - DEP</h5>
+				<p>Departure Control, or DEP, takes control of aircraft once they have taken off, and are at about 2000 feet above the ground.  Responsible for moving departing aircraft out of the TRACON airspace with proper sequencing between other departing aircraft, and arriving aircraft.  Departure controllers climb and turn aircraft onto a course toward their first waypoint on their route, in order to get them in line with everyone else before handing them off to an ARTCC facility for enroute control.</p>
+				<h5>Approach Control - APP</h5>
+				<p>Approach Control, or APP, takes control of aircraft once they have entered the TRACON airspace, and have been handed off from an ARTCC facility.  They are responsible for the descent and vectoring of the aircraft onto instrument, or visual approaches.  They will separate them from departing and other arriving aircraft, until they have reached their final approach course, where they will be handed off to the ATCT, and the Tower Controller.</p>
+				<div class="image">
+					<img src="ILS7LPANC.jpg">
+					<p class = "caption">An ILS Approach For Runway 07L into Ted Stevens Anchorage International Airport</p>
+				</div>
+				<h4>ARTCC - Air Route Traffic Control Centre</h4>
+				<h5>Enroute/Centre - CTR</h5>
+				<p>Centre, or Enroute Controllers are responsible for the safe passage of aircraft through the skies, from the moment they leave the TRACON airspace of their departure airfield, to the moment they enter the TRACON airspace of their arrival airfield.  There are many ARTCC facilities throughout the United States, all staffed with the most experienced controllers in the FAA.  These controllers control more airspace than any other position.</p>
+				<div class="image">
+					<img src="https://lh3.googleusercontent.com/F8LNSUrgxJ0KrkKYHwIuhCsCdkB8MdMXgCZsNQ3f5FDIEle5DIBd_4gXpGbxarRZPIzkWKQEHQ7YnYgKmZF9rNQfFHbTLj6ZVsMqbwUYQSgM-SjikSway4aWwdSPvsPrHPoBF1nm2wo4jXgnkg">
+					<p class = "caption">An Image Showing the 20 ARTCC Facilities in the Contiguous United States.</p>
+				</div>
+			</div>
+			<div id="airspace">
+				<h3>The National Airspace System</h3>
+				<p>There are 6 different types of airspace across the United States.  Each of these airspaces have different requirements to fly within them, and details on how far they extend.  They are named with 6 different letters, and their phonetic names.</p>
+				<p>Classes of Airspace:</p>
+				<ol>
+					<li>Class Alpha (A)</li>
+					<li>Class Bravo (B)</li>
+					<li>Class Charlie (C)</li>
+					<li>Class Delta (D)</li>
+					<li>Class Echo (E)</li>
+					<li>Class Golf (G)</li>
+				</ol>
+				<h4>Class Alpha (A)</h4>
+				<p>Class A airspace is all airspace extending upward from 18,000 feet Mean Sea Level (MSL) up to and including 60,000 feet MSL within the 48 Contiguous States, most of Alaska and the airspace included within a 12NM offshore perimeter. Class A airspace is the only class of airspace not depicted on charts.</p>
+				<h5>Pilot Requirements:</h5>
+				<ul>
+					<li>Flying under Instrument Flight Rules (IFR)</li>
+					<li>Two-Way Communications</li>
+					<li>Operating Mode C Transponder</li>
+				</ul>
+				<h4>Class Bravo (B)</h4>
+				<p>This class of airspace encompasses the busiest of airports. It generally extends up from the surface to 10,000 feet MSL. Think B for Busy. This airspace includes airports such as: Chicago's O'Hare (KORD), Los Angeles International (KLAX), and Miami International (KMIA), to name a few.  Controllers working Class Bravo airspace are usually very busy directing aircraft into the primary airport. Allowing smaller aircraft to fly under the airspace frees the pilot from waiting for clearance to the nearby airport and frees the controller to concentrate on aircraft going into the primary airport.</p>
+				<h5>Pilot Requirements:</h5>
+				<ul>
+					<li>VFR Aircraft operating into/out of/through Class Bravo airspace require an explicit clearance.</li>
+					<li>Two-Way Communications</li>
+					<li>Operating Mode C Transponder within the confines of the Mode C Veil.</li>
+				</ul>
+				<div class="image">
+					<img src="https://lh3.googleusercontent.com/vXAm78ZbYpis6QMWFYkT7Hs5f6_0WaBGEKJn4UcCTNXNBTyRBy1uOFBDe3AvNrw50pknGsFP9Oixksqjzq2xSi1WW6528_S5SNnOVMmDEfv6MbOMls9GvpjmwP3FB9Yre_X-52l8bz-PGiHRYg">
+					<p class="caption">A Sectional Showing a Class B Airspace.</p>
+				</div>
+				<h4>Class Charlie (C)</h4>
+				<p>This class of airspace surrounds crowded airspace that does not get the traffic that a Bravo airport does. Think of C as meaning Crowded or Congested. Typically the airspace extends 10 miles out and up to 4000 AGL (Above Ground Level).</p>
+				<h5>Pilot Requirements:</h5>
+				<ul>
+					<li>VFR Aircraft operating into/out of/through Class Bravo airspace require an explicit clearance.</li>
+					<li>Two-Way Communications</li>
+					<li>Operating Mode C Transponder within the confines of the Mode C Veil.</li>
+				</ul>
+				<div class="image">
+					<img src="https://lh3.googleusercontent.com/Lc2FL9CGkOvFnrn2OrPmg72jcyHzH9ujokRdIYUye_FOM5Mj_ELxcY068kiXZmaZUYsZhZA9wr_EJmQQ8zXW1F8XaKqpNsKdRg_lSZc7nszY-66V4vwt6nsHZyBmKlleEgASGUbQEReda_mceA">
+					<p class="caption">A Sectional Showing a Class C Airspace.</p>
+				</div>
+				<h4>Class Delta (D)</h4>
+				<p>Class D airspace provides ATC service for aircraft on the airport surface and in the airspace immediately surrounding the airport to control air traffic flow. ATC services typically provided at a Class D airport is via a Control Tower.  Class D airspace extends from the surface to 2,500 feet AGL. It is individually tailored for each airport but typically extends out 4 Nautical Miles from the primary airport.</p>
+				<h5>Pilot Requirements:</h5>
+				<ul>
+					<li>Two-Way Communications</li>
+				</ul>
+				<div class="image">
+					<img src="https://lh6.googleusercontent.com/9bsj128O6GnMo516NNpXBWyb5q-3TK3gr6eG_J-ZNU2wKl_o20-J3JKU8427aMyLLyOqpydy0kfN28e7BBhrjAf1enB1DeBHAjJIb6w3LlVi2e8CNYyFcwVY1Odtf_ZGGjV2mY7ULaC9glQwXQ">
+					<p class="caption">A Sectional Showing a Class D Airspace.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

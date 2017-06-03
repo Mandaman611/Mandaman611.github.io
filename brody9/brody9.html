@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> History of the United States Navy</title>
+		<link rel = "shortcut icon" href = "navylogo.ico">
+		<style>
+			video#bgvid { 
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				z-index: -100;
+				-ms-transform: translateX(-50%) translateY(-50%);
+				-moz-transform: translateX(-50%) translateY(-50%);
+				-webkit-transform: translateX(-50%) translateY(-50%);
+				transform: translateX(-50%) translateY(-50%);
+				background-size: cover; 
+			}
+		</style>
+		<script>
+			t1 = window.setTimeout(function(){ window.location = "brody9_2.html"; },3000);
+		</script>
+	</head>
+	<body>
+		<video playsinline autoplay muted poster="NavyLogo.jpg" id="bgvid">
+			<source src="NavyAnimation.mp4" type="video/mp4">
+		</video>
+	</body>
+</html>
