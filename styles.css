@@ -12,6 +12,7 @@ body{
     margin-left: -40;
     position: fixed;
     left: 71;
+    margin-bottom:7%;
 }
 
 #nav li {
@@ -41,7 +42,6 @@ body{
     width:90%;
     margin:0 auto;
     border-collapse: collapse;
-    margin-top:7%;
     background:white;
     border:1px solid black;
 }
