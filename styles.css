@@ -36,3 +36,10 @@ body{
 #nav a:hover {
     background-color: darkgray;
 }
+
+#timeline{
+    width:90%;
+    margin:auto;
+    display:block;
+    border-collapse: collapse;
+}
