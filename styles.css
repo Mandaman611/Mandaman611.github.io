@@ -3,3 +3,36 @@ body{
     padding: 0;
     background:aqua;
 }
+
+#nav {
+    list-style-type: none;
+    width: 90%;
+    display: table;
+    margin-top: 0;
+    margin-left: -40;
+    position: fixed;
+    left: 71;
+}
+
+#nav li {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    vertical-align: middle;
+    line-height: 300%;
+}
+
+#nav a {
+    width: 16.7%;
+    display: inline-block;
+    background: grey;
+    height: 100%;
+    display: table-cell;
+    color: white;
+    font-size: 16;
+}
+
+#nav a:hover {
+    background-color: darkgray;
+}
