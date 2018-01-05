@@ -6,12 +6,12 @@ body{
 
 #nav {
     list-style-type: none;
-    width: 90.1%;
+    width: 90%;
     display: table;
     margin-top: 0;
     margin-left: -40;
     position: fixed;
-    left:71;
+    left:5%;
     margin-bottom:7%;
     height:7%;
 }
