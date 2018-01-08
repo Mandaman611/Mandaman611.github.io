@@ -60,3 +60,15 @@ body{
     height:100%;
     border:1px solid black;
 }
+
+#timeline tr td:nth-child(1){
+    width:10%;
+}
+
+#timeline tr td:nth-child(2){
+    width:60%;
+}
+
+#timeline tr td:nth-child(3){
+    width:30%;
+}
