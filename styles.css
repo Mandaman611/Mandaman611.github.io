@@ -58,9 +58,4 @@ body{
 
 #timeline tr *{
     height:100%;
-    border:1px solid black;
-}
-
-.noboarders{
-    border: 0px solid black;
 }
