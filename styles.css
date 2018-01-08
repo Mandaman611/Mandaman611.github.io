@@ -59,10 +59,12 @@ body{
 #timeline tr td{
     height:100%;
     border:1px solid black;
+    padding-left:0.3em;
 }
 
 #timeline tr td:nth-child(1){
     width:10%;
+    text-align:center;
 }
 
 #timeline tr td:nth-child(2){
@@ -71,4 +73,9 @@ body{
 
 #timeline tr td:nth-child(3){
     width:30%;
+}
+
+#time tr td img{
+    margin:0 auto;
+    width:100%;
 }
