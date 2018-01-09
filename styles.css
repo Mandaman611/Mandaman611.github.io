@@ -79,6 +79,6 @@ body{
     width:100%;
 }
 
-#header{
-    height:10%;
+#header h1{
+    font-size:3em;
 }
