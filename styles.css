@@ -26,7 +26,7 @@ body{
 }
 
 #nav a {
-    width: 16.7%;
+    width: 14.3%;
     display: inline-block;
     background: grey;
     height: 100%;
@@ -45,4 +45,12 @@ body{
     height:93%;
     padding-top:7%;
     background:white;
+}
+
+
+#home{
+    height:10%;
+    display:block;
+    background-image:url("https://i0.wp.com/www.labrujulaverde.com/wp-content/uploads/2017/02/Seneca-Falls.jpg");
+    background-size: 100% 100%;
 }
