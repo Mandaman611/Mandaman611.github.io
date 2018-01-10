@@ -32,7 +32,7 @@ body{
     height: 100%;
     display: table-cell;
     color: white;
-    font-size: 20%;
+    font-size: 100%;
 }
 
 #nav a:hover {
