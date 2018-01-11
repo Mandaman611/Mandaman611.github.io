@@ -35,6 +35,7 @@ body{
     height: 100%;
     vertical-align: middle;
     line-height:300%;
+    padding:2px;
 }
 
 #nav a {
@@ -70,5 +71,5 @@ body{
 }
 
 #home h1{
-    padding-top:10%;
+    padding-top:-10%;
 }
