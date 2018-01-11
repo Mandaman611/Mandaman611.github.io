@@ -75,6 +75,8 @@ body{
 #home img{
     width:80%;
     margin:auto;
+    display:block;
+    margin-bottom:0.5em;
 }
 
 #content div{
