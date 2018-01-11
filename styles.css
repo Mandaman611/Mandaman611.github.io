@@ -72,6 +72,11 @@ body{
     padding-top:0;
 }
 
+#home img{
+    width:100%;
+    margin:auto;
+}
+
 #content div{
     padding:1em;
 }
