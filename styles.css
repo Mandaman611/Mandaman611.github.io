@@ -29,7 +29,7 @@ body{
     position: fixed;
     left:5%;
     margin-bottom:7%;
-    height:4%;
+    height:1%;
 }
 
 #nav li {
@@ -39,7 +39,6 @@ body{
     height: 100%;
     vertical-align: middle;
     line-height:300%;
-    padding:2px;
 }
 
 #nav a {
@@ -50,6 +49,7 @@ body{
     display: table-cell;
     color: white;
     font-size: 100%;
+    padding:2px;
 }
 
 #nav a:hover {
