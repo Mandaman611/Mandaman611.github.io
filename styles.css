@@ -1,3 +1,15 @@
+h1{
+    font-size:80%;
+}
+
+h2{
+    font-size:60%;
+}
+
+h3{
+    font-size:40%;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -49,7 +61,7 @@ body{
 
 
 #home{
-    height:10%;
+    height:70%;
     display:block;
     background-image:url("https://i0.wp.com/www.labrujulaverde.com/wp-content/uploads/2017/02/Seneca-Falls.jpg");
     background-size: 100% 100%;
