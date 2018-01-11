@@ -68,3 +68,7 @@ body{
     margin-top:0;
     padding-top:0;
 }
+
+#home h1{
+    padding-top:10%;
+}
