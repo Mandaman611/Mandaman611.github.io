@@ -8,6 +8,7 @@ h2{
 
 h3{
     font-size:160%;
+    padding: 10px;
 }
 
 h4{
@@ -93,4 +94,7 @@ body{
 
 #staff-table img{
     width:100px;    
+}
+p{
+    padding: 10px;
 }
