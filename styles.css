@@ -48,12 +48,9 @@ body{
     height: 100%;
     display: table-cell;
     color: white;
-<<<<<<< HEAD
-    font-size: 20;
-=======
-    font-size: 70%;
+    font-size: 18;
+    font-size: 100%;
     padding:2px;
->>>>>>> 0a0c1163157f65d404ea4bc9d75843c395b369f3
 }
 
 #nav a:hover {
