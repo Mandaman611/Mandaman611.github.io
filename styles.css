@@ -39,7 +39,7 @@ body{
     text-align: center;
     height: 100%;
     vertical-align: middle;
-    line-height:300%;
+    line-height:200%;
 }
 
 #nav a {
@@ -61,39 +61,44 @@ body{
 #content{
     margin:auto;
     width:90%;
-    height:1000%;
-    padding-top:7%;
+    height:500%;
+    padding-top:1em;
     background:white;
 }
 
 
 #home{
-    height:10%;
+    height:17%;
     display:block;
     margin-top:0;
     padding-top:0;
+    margin:auto;
+    width:95%;
 }
 
 #home img{
-    width:100%;
-    margin:auto;
     display:block;
+    width:100%;
+    margin: 0 auto;
 }
 
 #content div{
     padding:1em;
+    display:inline-block;
 }
 
 #staff-table{
     border-collapse:collapse;
 }
 
-#staff-table tr *{
+#staff-table tr td, #staff-table tr th{
     border:1px solid black;
+    border-collapse:collapse;
+    padding:1em;
 }
 
 #staff-table img{
-    width:100px;    
+    width:200px;    
 }
 p{
     padding: 5px;
