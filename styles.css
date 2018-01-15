@@ -61,14 +61,14 @@ body{
 #content{
     margin:auto;
     width:90%;
-    height:500%;
+    height:620%;
     padding-top:1em;
     background:white;
 }
 
 
 #home{
-    height:17%;
+    height:13%;
     display:block;
     margin-top:0;
     padding-top:0;
@@ -102,4 +102,9 @@ body{
 }
 p{
     padding: 5px;
+}
+
+#pamphlet img{
+    width:100%;
+    padding-top:2%;
 }
